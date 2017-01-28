@@ -64,7 +64,7 @@ su postgres -c "psql -c \"CREATE USER eruser WITH PASSWORD 'fire';\""
 
 echo 'Loading DB...'
 su postgres -c "psql -f $SQL/create/create-db-fire.sql -v db=fire"
-su postgres -c "psql fire < $PROJ/data/fire_db"
+su postgres -c "psql fire < $PROJ/data/dump3.sql"
 
 echo 'Configuring DB users...'
 su postgres -c "psql -c 'GRANT SELECT ON ALL TABLES IN SCHEMA public TO eruser;' fire"
