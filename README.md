@@ -2,7 +2,7 @@
 Simulations, Models, and Visualizations of Portland Fire and Rescue data
 
 ## _IMPORTANT_
-In order for the vagrant box to install correctly, you _must_ download the file 'fire_db' from the shared
+In order for the vagrant box to install correctly, you _must_ download the file 'dump3.sql' from the shared
 drive and put it into:
 emergency-response/vagrant/data
 
