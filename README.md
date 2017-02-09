@@ -17,7 +17,7 @@ passwords, we use a python module called `dotenv`.  To install, simply run
     pip install -U python-dotenv
 
 in your virtual environment or virtualbox.  You can then save environment
-variables to be used within a notebook to a file called `file.env` *anywhere on 
+variables to be used within a notebook to a file called `file.env` *anywhere on
 your filesystem* (`file` can be anything, including blank).  The file should
 look something like this:
 
@@ -39,8 +39,7 @@ connection creation method:
 
     import os
     conn = psycopg2.connect(database=os.environ.get("database"),
-                            user=os.environ.get("user"), 
-                            password = os.environ.get("password"), 
+                            user=os.environ.get("user"),
+                            password = os.environ.get("password"),
                             host=os.environ.get("host"),
                             port=os.environ.get("port"))
-
